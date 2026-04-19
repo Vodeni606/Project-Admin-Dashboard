@@ -26,6 +26,7 @@ ul,li {
 .search-container img {
     height: 36px;
     width: auto;
+    margin: 10px;
 }
 .search-box {
     padding: 10px;
@@ -43,6 +44,7 @@ ul,li {
     border-radius: 0 5px 5px 0; /* Round right corners */
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 10px;
 }
 
 header {
@@ -76,6 +78,7 @@ header {
     padding: 0;
     font-weight: 600;
 }
+
 
 header ul {
     grid-column: 4/6;
@@ -113,14 +116,35 @@ nav{
 nav h1 {
     margin: 20px;
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-left: 48px;
+}
+nav h1 img {
+    height: 40px;
+}
+nav img {
+    height: 36px;
+    width: auto;
+    filter: invert(1);
 }
 
 nav .task {
     grid-row: 2/3;
     display: grid;
-
+}
+nav li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
 }
 nav .settings {
+    margin-top: 100px;
     display: grid;
     max-height: 200px;
 }
