@@ -18,6 +18,14 @@ ul,li {
 .search-container {
     margin: 20px;   
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.search-container img {
+    height: 36px;
+    width: auto;
 }
 .search-box {
     padding: 10px;
