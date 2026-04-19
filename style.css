@@ -15,6 +15,28 @@ ul,li {
     color: white;
 }
 
+.search-container {
+    margin: 20px;   
+    grid-column: 1/4;
+}
+.search-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Round left corners */
+    outline: none;
+    min-width: 600px;
+}
+.search-button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Round right corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
@@ -76,7 +98,23 @@ nav{
     background-color: rgb(37, 157, 212);
     display: grid;
     grid-column: 1;
-    grid-row: 1/6;   
+    grid-row: 1/6;
+    grid-template-rows: auto 1fr 1fr 1fr;
+}
+
+nav h1 {
+    margin: 20px;
+    grid-row: 1/2;
+}
+
+nav .task {
+    grid-row: 2/3;
+    display: grid;
+
+}
+nav .settings {
+    display: grid;
+    max-height: 200px;
 }
 
 article{
