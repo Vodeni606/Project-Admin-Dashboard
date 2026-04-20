@@ -17,7 +17,7 @@ ul,li {
 
 .search-container {
     margin: 20px;   
-    grid-column: 1/4;
+    grid-column: 2/4;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -32,7 +32,7 @@ ul,li {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
-    border-radius: 5px 0 0 5px; /* Round left corners */
+    border-radius: 5px 0 0 5px; 
     outline: none;
     min-width: 600px;
 }
@@ -41,7 +41,7 @@ ul,li {
     background-color: #2196F3;
     color: white;
     border: none;
-    border-radius: 0 5px 5px 0; /* Round right corners */
+    border-radius: 0 5px 5px 0; 
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 10px;
@@ -65,11 +65,15 @@ header {
     gap: 5px;
 }
 
-.welcome-text p {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
+.profile-info {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.welcome-text img {
+    height: 50px;
+    width: 40px;
+    margin-right: 20px;
 }
 
 .welcome-text h2 {
@@ -152,6 +156,7 @@ nav .settings {
 article{
     color: black;
     grid-row: 2;
+    background-color: lightgray;
 }
 article h3 {
     grid-column: 2/3;
@@ -173,11 +178,25 @@ article h3 {
     box-shadow: 2px 2px 5px grey;
     min-height: 200px;
     display: grid;
+    grid-template-rows: 1fr 2fr auto;    background-color: white;}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    justify-content: end;
+}
+
+.card-footer img {
+    height: 30px;
+    width: 30px;
+
 }
 
 sidebar {
     grid-column: 3/4;
     color: black;
+    background-color: lightgray;
 }
 
 sidebar h2 {
@@ -192,14 +211,41 @@ sidebar h2 {
     border-radius: 8px;
     box-shadow: 2px 2px 5px grey;
     min-height: 200px;
-
+    background-color: white;
 }
-
-
+.announcment-card{
+    border-bottom: 1px solid;
+}
 
 .trending-card {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px grey;
     min-height: 200px;
+    background-color: white;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: start;
+}
+
+.profile img {
+    height: 50px;
+    width: 50px;
+}
+
+.profile p:nth-child(2) {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.profile p:nth-child(3) {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 14px;
+    color: gray;
 }
